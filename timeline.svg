@@ -1,0 +1,174 @@
+<svg width="800" height="1050" viewBox="0 0 800 1050" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+
+    .card-bg   { fill: #f6f8fa; }
+    .card-bd   { fill: none; stroke: #d0d7de; stroke-width: 1; }
+    .tl-line   { stroke: #d0d7de; stroke-width: 1; }
+    .dot-ring  { fill: #ffffff; stroke-width: 2; }
+    .t-title   { fill: #1f2328; }
+    .t-muted   { fill: #636c76; }
+    .t-subtle  { fill: #6e7781; }
+    .tech-bg   { fill: #ffffff; stroke: #d0d7de; stroke-width: 1; }
+    .ln-bg     { fill: #eaeef2; stroke: #d8dee4; stroke-width: 1; }
+
+    .bg-green  { fill: #dafbe1; } .fg-green  { fill: #1a7f37; }
+    .bg-blue   { fill: #ddf4ff; } .fg-blue   { fill: #0550ae; }
+    .bg-purple { fill: #fbefff; } .fg-purple { fill: #6639ba; }
+    .bg-pink   { fill: #ffeff7; } .fg-pink   { fill: #bf3989; }
+    .bg-amber  { fill: #fff8c5; } .fg-amber  { fill: #9a6700; }
+    .bg-emed   { fill: #dafbe1; } .fg-emed   { fill: #1a7f37; }
+
+    .dot-1 { fill: #0969da; } .dot-2 { fill: #0969da; }
+    .dot-3 { fill: #6639ba; } .dot-4 { fill: #bf3989; }
+    .dot-5 { fill: #1a7f37; }
+
+    @media (prefers-color-scheme: dark) {
+      .card-bg  { fill: #161b22; }
+      .card-bd  { stroke: #30363d; }
+      .tl-line  { stroke: #21262d; }
+      .dot-ring { fill: #0d1117; }
+      .t-title  { fill: #e6edf3; }
+      .t-muted  { fill: #848d97; }
+      .t-subtle { fill: #6e7681; }
+      .tech-bg  { fill: #0d1117; stroke: #30363d; }
+      .ln-bg    { fill: #010409; stroke: #21262d; }
+
+      .bg-green  { fill: #0f2d16; } .fg-green  { fill: #3fb950; }
+      .bg-blue   { fill: #121d2f; } .fg-blue   { fill: #58a6ff; }
+      .bg-purple { fill: #1d1236; } .fg-purple { fill: #a371f7; }
+      .bg-pink   { fill: #2d0d1f; } .fg-pink   { fill: #f778ba; }
+      .bg-amber  { fill: #2a1d04; } .fg-amber  { fill: #d29922; }
+      .bg-emed   { fill: #0f2d16; } .fg-emed   { fill: #3fb950; }
+
+      .dot-1 { fill: #58a6ff; } .dot-2 { fill: #2f81f7; }
+      .dot-3 { fill: #a371f7; } .dot-4 { fill: #f778ba; }
+      .dot-5 { fill: #3fb950; }
+    }
+  </style>
+
+  <!-- Vertical timeline line -->
+  <line x1="155" y1="45" x2="155" y2="885" class="tl-line"/>
+
+  <!-- ═══════════ ITEM 1 ═══════════ -->
+  <circle cx="155" cy="45" r="7" class="dot-ring"/>
+  <circle cx="155" cy="45" r="4" class="dot-1"/>
+
+  <rect x="12" y="33" width="60" height="20" rx="4" class="bg-blue"/>
+  <text x="42" y="47" text-anchor="middle" font-size="11" font-weight="500" class="mono fg-blue">2024</text>
+  <text x="42" y="62" text-anchor="middle" font-size="10" class="t-subtle">First Release</text>
+
+  <rect x="175" y="20" width="610" height="175" rx="6" class="card-bg"/>
+  <rect x="175" y="20" width="610" height="175" rx="6" class="card-bd"/>
+  <text x="193" y="46" font-size="14" font-weight="600" class="t-title">🤖 TDS Store Telegram Bot</text>
+  <rect x="193" y="53" width="72" height="16" rx="8" class="bg-green"/>
+  <text x="229" y="65" text-anchor="middle" font-size="10" class="mono fg-green">Production</text>
+  <text x="193" y="90" font-size="12" class="t-muted">First real product — catalogue, user wallet, auto-delivery,</text>
+  <text x="193" y="106" font-size="12" class="t-muted">Binance &amp; SePay payment webhooks, admin/sub-admin roles.</text>
+  <rect x="193" y="115" width="575" height="38" rx="4" class="ln-bg"/>
+  <text x="203" y="129" font-size="10" font-weight="600" class="mono t-subtle">// learned</text>
+  <text x="203" y="145" font-size="11" font-style="italic" class="t-muted">Async Python, payment webhook integration, operating a live product with real users.</text>
+  <rect x="193" y="160" width="46" height="16" rx="3" class="tech-bg"/><text x="216" y="172" text-anchor="middle" font-size="10" class="mono t-muted">Python</text>
+  <rect x="244" y="160" width="44" height="16" rx="3" class="tech-bg"/><text x="266" y="172" text-anchor="middle" font-size="10" class="mono t-muted">SQLite</text>
+  <rect x="293" y="160" width="76" height="16" rx="3" class="tech-bg"/><text x="331" y="172" text-anchor="middle" font-size="10" class="mono t-muted">Binance API</text>
+  <rect x="374" y="160" width="40" height="16" rx="3" class="tech-bg"/><text x="394" y="172" text-anchor="middle" font-size="10" class="mono t-muted">SePay</text>
+  <rect x="419" y="160" width="108" height="16" rx="3" class="tech-bg"/><text x="473" y="172" text-anchor="middle" font-size="10" class="mono t-muted">Telegram Bot API</text>
+
+  <!-- ═══════════ ITEM 2 ═══════════ -->
+  <circle cx="155" cy="255" r="7" class="dot-ring"/>
+  <circle cx="155" cy="255" r="4" class="dot-2"/>
+
+  <rect x="6" y="243" width="90" height="20" rx="4" class="bg-blue"/>
+  <text x="51" y="257" text-anchor="middle" font-size="11" font-weight="500" class="mono fg-blue">2024 – 25</text>
+  <text x="51" y="272" text-anchor="middle" font-size="10" class="t-subtle">Full-stack</text>
+
+  <rect x="175" y="230" width="610" height="175" rx="6" class="card-bg"/>
+  <rect x="175" y="230" width="610" height="175" rx="6" class="card-bd"/>
+  <text x="193" y="256" font-size="14" font-weight="600" class="t-title">🛒 TDS Store Web Shop</text>
+  <rect x="193" y="263" width="72" height="16" rx="8" class="bg-green"/>
+  <text x="229" y="275" text-anchor="middle" font-size="10" class="mono fg-green">Production</text>
+  <text x="193" y="300" font-size="12" class="t-muted">Upgraded to full-stack: React + TypeScript, Flask backend,</text>
+  <text x="193" y="316" font-size="12" class="t-muted">Socket.IO live chat, JWT auth, USDT top-up, admin dashboard.</text>
+  <rect x="193" y="325" width="575" height="38" rx="4" class="ln-bg"/>
+  <text x="203" y="339" font-size="10" font-weight="600" class="mono t-subtle">// learned</text>
+  <text x="203" y="355" font-size="11" font-style="italic" class="t-muted">Full-stack architecture, WebSockets &amp; real-time systems, JWT authentication.</text>
+  <rect x="193" y="370" width="44" height="16" rx="3" class="tech-bg"/><text x="215" y="382" text-anchor="middle" font-size="10" class="mono t-muted">React</text>
+  <rect x="242" y="370" width="78" height="16" rx="3" class="tech-bg"/><text x="281" y="382" text-anchor="middle" font-size="10" class="mono t-muted">TypeScript</text>
+  <rect x="325" y="370" width="38" height="16" rx="3" class="tech-bg"/><text x="344" y="382" text-anchor="middle" font-size="10" class="mono t-muted">Flask</text>
+  <rect x="368" y="370" width="68" height="16" rx="3" class="tech-bg"/><text x="402" y="382" text-anchor="middle" font-size="10" class="mono t-muted">Socket.IO</text>
+  <rect x="441" y="370" width="78" height="16" rx="3" class="tech-bg"/><text x="480" y="382" text-anchor="middle" font-size="10" class="mono t-muted">PostgreSQL</text>
+  <rect x="524" y="370" width="30" height="16" rx="3" class="tech-bg"/><text x="539" y="382" text-anchor="middle" font-size="10" class="mono t-muted">JWT</text>
+
+  <!-- ═══════════ ITEM 3 ═══════════ -->
+  <circle cx="155" cy="465" r="7" class="dot-ring"/>
+  <circle cx="155" cy="465" r="4" class="dot-3"/>
+
+  <rect x="12" y="453" width="60" height="20" rx="4" class="bg-purple"/>
+  <text x="42" y="467" text-anchor="middle" font-size="11" font-weight="500" class="mono fg-purple">2025</text>
+  <text x="42" y="482" text-anchor="middle" font-size="10" class="t-subtle">Automation</text>
+
+  <rect x="175" y="440" width="610" height="175" rx="6" class="card-bg"/>
+  <rect x="175" y="440" width="610" height="175" rx="6" class="card-bd"/>
+  <text x="193" y="466" font-size="14" font-weight="600" class="t-title">🔑 OTP Support Bot &amp; Automation</text>
+  <rect x="193" y="473" width="72" height="16" rx="8" class="bg-purple"/>
+  <text x="229" y="485" text-anchor="middle" font-size="10" class="mono fg-purple">Completed</text>
+  <text x="193" y="510" font-size="12" class="t-muted">Bot retrieving OTP codes via Microsoft Graph API with job queue</text>
+  <text x="193" y="526" font-size="12" class="t-muted">and usage credits. Browser automation &amp; remote control panel.</text>
+  <rect x="193" y="535" width="575" height="38" rx="4" class="ln-bg"/>
+  <text x="203" y="549" font-size="10" font-weight="600" class="mono t-subtle">// learned</text>
+  <text x="203" y="565" font-size="11" font-style="italic" class="t-muted">Microsoft enterprise APIs, task queue design, headless Chrome automation.</text>
+  <rect x="193" y="580" width="44" height="16" rx="3" class="tech-bg"/><text x="215" y="592" text-anchor="middle" font-size="10" class="mono t-muted">Python</text>
+  <rect x="242" y="580" width="92" height="16" rx="3" class="tech-bg"/><text x="288" y="592" text-anchor="middle" font-size="10" class="mono t-muted">MS Graph API</text>
+  <rect x="339" y="580" width="100" height="16" rx="3" class="tech-bg"/><text x="389" y="592" text-anchor="middle" font-size="10" class="mono t-muted">Headless Chrome</text>
+  <rect x="444" y="580" width="68" height="16" rx="3" class="tech-bg"/><text x="478" y="592" text-anchor="middle" font-size="10" class="mono t-muted">Job Queue</text>
+
+  <!-- ═══════════ ITEM 4 ═══════════ -->
+  <circle cx="155" cy="675" r="7" class="dot-ring"/>
+  <circle cx="155" cy="675" r="4" class="dot-4"/>
+
+  <rect x="12" y="663" width="60" height="20" rx="4" class="bg-pink"/>
+  <text x="42" y="677" text-anchor="middle" font-size="11" font-weight="500" class="mono fg-pink">2026</text>
+  <text x="42" y="692" text-anchor="middle" font-size="10" class="t-subtle">Team / AI</text>
+
+  <rect x="175" y="650" width="610" height="175" rx="6" class="card-bg"/>
+  <rect x="175" y="650" width="610" height="175" rx="6" class="card-bd"/>
+  <text x="193" y="676" font-size="14" font-weight="600" class="t-title">💼 Recruitment Website</text>
+  <rect x="193" y="683" width="72" height="16" rx="8" class="bg-purple"/>
+  <text x="229" y="695" text-anchor="middle" font-size="10" class="mono fg-purple">Completed</text>
+  <text x="193" y="720" font-size="12" class="t-muted">Team project — Next.js job platform: CV upload (OCR, malware scan),</text>
+  <text x="193" y="736" font-size="12" class="t-muted">AI job search, hybrid CV scoring (40% rules + 60% AI), live chat.</text>
+  <rect x="193" y="745" width="575" height="38" rx="4" class="ln-bg"/>
+  <text x="203" y="759" font-size="10" font-weight="600" class="mono t-subtle">// learned</text>
+  <text x="203" y="775" font-size="11" font-style="italic" class="t-muted">Team Git workflow, AI/OCR integration, secure file uploads, system design.</text>
+  <rect x="193" y="790" width="54" height="16" rx="3" class="tech-bg"/><text x="220" y="802" text-anchor="middle" font-size="10" class="mono t-muted">Next.js</text>
+  <rect x="252" y="790" width="78" height="16" rx="3" class="tech-bg"/><text x="291" y="802" text-anchor="middle" font-size="10" class="mono t-muted">TypeScript</text>
+  <rect x="335" y="790" width="78" height="16" rx="3" class="tech-bg"/><text x="374" y="802" text-anchor="middle" font-size="10" class="mono t-muted">PostgreSQL</text>
+  <rect x="418" y="790" width="30" height="16" rx="3" class="tech-bg"/><text x="433" y="802" text-anchor="middle" font-size="10" class="mono t-muted">OCR</text>
+  <rect x="453" y="790" width="70" height="16" rx="3" class="tech-bg"/><text x="488" y="802" text-anchor="middle" font-size="10" class="mono t-muted">AI Scoring</text>
+
+  <!-- ═══════════ ITEM 5 ═══════════ -->
+  <circle cx="155" cy="885" r="7" class="dot-ring"/>
+  <circle cx="155" cy="885" r="4" class="dot-5"/>
+
+  <rect x="6" y="873" width="90" height="20" rx="4" class="bg-emed"/>
+  <text x="51" y="887" text-anchor="middle" font-size="11" font-weight="500" class="mono fg-emed">2026 – now</text>
+  <text x="51" y="902" text-anchor="middle" font-size="10" class="t-subtle">Research</text>
+
+  <rect x="175" y="860" width="610" height="175" rx="6" class="card-bg"/>
+  <rect x="175" y="860" width="610" height="175" rx="6" class="card-bd"/>
+  <text x="193" y="886" font-size="14" font-weight="600" class="t-title">🎬 Text-to-Video &amp; Rendering</text>
+  <rect x="193" y="893" width="68" height="16" rx="8" class="bg-amber"/>
+  <text x="227" y="905" text-anchor="middle" font-size="10" class="mono fg-amber">In Progress</text>
+  <text x="193" y="930" font-size="12" class="t-muted">Generating short videos from text using deep generative models.</text>
+  <text x="193" y="946" font-size="12" class="t-muted">Scene lighting &amp; rendering with computer vision techniques.</text>
+  <rect x="193" y="955" width="575" height="38" rx="4" class="ln-bg"/>
+  <text x="203" y="969" font-size="10" font-weight="600" class="mono t-subtle">// focus area</text>
+  <text x="203" y="985" font-size="11" font-style="italic" class="t-muted">Generative models (Diffusion, GANs), 3D scene lighting, deep learning pipeline.</text>
+  <rect x="193" y="1000" width="52" height="16" rx="3" class="tech-bg"/><text x="219" y="1012" text-anchor="middle" font-size="10" class="mono t-muted">PyTorch</text>
+  <rect x="250" y="1000" width="108" height="16" rx="3" class="tech-bg"/><text x="304" y="1012" text-anchor="middle" font-size="10" class="mono t-muted">Diffusion Models</text>
+  <rect x="363" y="1000" width="54" height="16" rx="3" class="tech-bg"/><text x="390" y="1012" text-anchor="middle" font-size="10" class="mono t-muted">OpenCV</text>
+  <rect x="422" y="1000" width="108" height="16" rx="3" class="tech-bg"/><text x="476" y="1012" text-anchor="middle" font-size="10" class="mono t-muted">Computer Vision</text>
+  <rect x="535" y="1000" width="72" height="16" rx="3" class="tech-bg"/><text x="571" y="1012" text-anchor="middle" font-size="10" class="mono t-muted">3D Lighting</text>
+
+</svg>
