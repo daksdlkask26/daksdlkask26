@@ -52,12 +52,3 @@
   <img src="https://github-readme-stats.vercel.app/api?username=daksdlkask26&show_icons=true&theme=dracula&hide_border=false&border_radius=5" height="150" alt="stats graph" />
 </div>
 
-###
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/daksdlkask26/daksdlkask26/pacman-output/pacman-contribution-graph-dark.svg?game=pacman">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/daksdlkask26/daksdlkask26/pacman-output/pacman-contribution-graph.svg?game=pacman">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/daksdlkask26/daksdlkask26/pacman-output/pacman-contribution-graph.svg?game=pacman">
-</picture>
-
-###
