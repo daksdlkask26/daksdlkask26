@@ -1,0 +1,53 @@
+<svg width="1000" height="330" viewBox="0 0 1000 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="About JK Dev: Computer Vision student at HCMUS (K24, year 3), researching text-to-video generation and lighting/rendering, founder of TDS Store (live 24/7 since 2024), builds bots, full-stack apps, payment pipelines and automation, open to SWE / Computer Vision internships.">
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+
+    .card-bg  { fill: #f6f8fa; }
+    .card-bd  { fill: none; stroke: #d0d7de; stroke-width: 1; }
+    .hl-bg    { fill: #ffffff; stroke: #d0d7de; stroke-width: 1; }
+    .divider  { stroke: #d0d7de; stroke-width: 1; }
+    .t-body   { fill: #1f2328; }
+    .t-muted  { fill: #636c76; }
+    .t-subtle { fill: #6e7781; }
+    .em       { font-weight: 700; }
+    .c1 { fill: #0969da; } .c2 { fill: #bf3989; } .c3 { fill: #8250df; } .c4 { fill: #1a7f37; }
+
+    @media (prefers-color-scheme: dark) {
+      .card-bg  { fill: #161b22; }
+      .card-bd  { stroke: #30363d; }
+      .hl-bg    { fill: #0d1117; stroke: #30363d; }
+      .divider  { stroke: #30363d; }
+      .t-body   { fill: #e6edf3; }
+      .t-muted  { fill: #9198a1; }
+      .t-subtle { fill: #848d97; }
+      .c1 { fill: #58a6ff; } .c2 { fill: #f778ba; } .c3 { fill: #a371f7; } .c4 { fill: #3fb950; }
+    }
+
+    @keyframes reveal { from { opacity: 0; transform: translateX(-8px); } to { opacity: 1; transform: none; } }
+    .line   { animation: reveal .45s ease-out both; }
+    @keyframes pulse { 0%, 100% { opacity: .3; } 50% { opacity: 1; } }
+    .pulse  { animation: pulse 1.6s ease-in-out infinite; }
+    @keyframes ping { from { r: 5; opacity: .6; } to { r: 14; opacity: 0; } }
+    .ping   { animation: ping 1.6s ease-out infinite; }
+  </style>
+
+  <rect class="card-bg" x="0.5" y="0.5" width="999" height="329"/>
+  <rect class="card-bd" x="0.5" y="0.5" width="999" height="329"/>
+
+  <text class="mono t-subtle" x="40" y="44" font-size="12" letter-spacing="2">WHOAMI</text>
+  <text class="line t-body" style="animation-delay:0.15s" x="40" y="112" font-size="16">Hi, I&#x27;m <tspan class="c1 em">JK Dev</tspan>, a <tspan class="c1 em">Computer Vision</tspan> student at <tspan class="c1 em">HCMUS</tspan> (K24, Year 3).</text><text class="line t-body" style="animation-delay:0.27s" x="40" y="150" font-size="16">I research <tspan class="c3 em">Text-to-Video Generation</tspan> and <tspan class="c3 em">Lighting / Rendering</tspan></text><text class="line t-body" style="animation-delay:0.39s" x="40" y="176" font-size="16">with deep generative models.</text><text class="line t-body" style="animation-delay:0.51s" x="40" y="214" font-size="16">I founded <tspan class="c2 em">TDS Store</tspan>, a digital shop running <tspan class="c2 em">24/7 since 2024</tspan>,</text><text class="line t-body" style="animation-delay:0.63s" x="40" y="240" font-size="16">and I build bots, full-stack apps, payment pipelines and automation tools.</text><text class="line t-body" style="animation-delay:0.75s" x="40" y="278" font-size="16">Currently looking for a <tspan class="c4 em">SWE / Computer Vision internship</tspan>.</text>
+
+  <line class="divider" x1="660" y1="24" x2="660" y2="306"/>
+
+  <text class="mono t-subtle" x="690" y="44" font-size="12" letter-spacing="2">HIGHLIGHTS</text>
+  <g class="line" style="animation-delay:0.30s"><rect class="hl-bg" x="690" y="62" width="270" height="52"/><rect class="c1" x="690" y="62" width="4" height="52"/><text class="c1" x="708" y="96" font-size="22" font-weight="800">Year 3</text><text class="t-muted" x="800" y="93" font-size="12">CV student @ HCMUS · K24</text></g><g class="line" style="animation-delay:0.50s"><rect class="hl-bg" x="690" y="126" width="270" height="52"/><rect class="c2" x="690" y="126" width="4" height="52"/><text class="c2" x="708" y="160" font-size="22" font-weight="800">24/7</text><text class="t-muted" x="800" y="157" font-size="12">TDS Store, live since 2024</text></g><g class="line" style="animation-delay:0.70s"><rect class="hl-bg" x="690" y="190" width="270" height="52"/><rect class="c3" x="690" y="190" width="4" height="52"/><text class="c3" x="708" y="224" font-size="22" font-weight="800">2</text><text class="t-muted" x="800" y="221" font-size="12">tracks: T2V · Rendering</text></g>
+  <g class="line" style="animation-delay:.9s">
+    <rect class="hl-bg" x="690" y="254" width="270" height="52"/>
+    <rect class="c4" x="690" y="254" width="4" height="52"/>
+    <circle class="c4 ping" cx="714" cy="280" r="5"/>
+    <circle class="c4 pulse" cx="714" cy="280" r="5"/>
+    <text class="mono c4" x="732" y="277" font-size="12" font-weight="700" letter-spacing="1.5">OPEN TO INTERNSHIP</text>
+    <text class="t-muted" x="732" y="294" font-size="12">Software Engineering · Computer Vision</text>
+  </g>
+</svg>

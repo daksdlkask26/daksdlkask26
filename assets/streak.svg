@@ -1,0 +1,108 @@
+<svg width="1000" height="330" viewBox="0 0 1000 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GitHub streak for daksdlkask26">
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+
+    .card-bg  { fill: #f6f8fa; }
+    .card-bd  { fill: none; stroke: #d0d7de; stroke-width: 1; }
+    .divider  { stroke: #d0d7de; stroke-width: 1; }
+    .t-title  { fill: #1f2328; }
+    .t-muted  { fill: #636c76; }
+    .t-subtle { fill: #6e7781; }
+    .accent   { fill: #0969da; }
+    .ring     { fill: none; stroke-width: 5; }
+    .bar      { fill: #d0d7de; }
+    .tile-1   { fill: #0969da; }
+    .tile-2   { fill: #bf3989; }
+    .tile-3   { fill: #8250df; }
+    .tile-4   { fill: #1a7f37; }
+    .cy-base  { stop-color: #0e7490; }
+    .cy-glow  { stop-color: #22d3ee; }
+    .bar-top  { stop-color: #22d3ee; }
+    .bar-mid  { stop-color: #0969da; }
+    .bar-low  { stop-color: #8250df; }
+    .glow     { fill: none; stroke: #22d3ee; stroke-width: 10; opacity: .15; }
+
+    @keyframes wave  { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
+    @keyframes pulse { 0%, 100% { opacity: .05; } 50% { opacity: .35; } }
+    .bar-on   { animation: wave 2.4s ease-in-out infinite; }
+    .glow     { animation: pulse 2.4s ease-in-out infinite; }
+
+    @media (prefers-color-scheme: dark) {
+      .card-bg  { fill: #161b22; }
+      .card-bd  { stroke: #30363d; }
+      .divider  { stroke: #30363d; }
+      .t-title  { fill: #e6edf3; }
+      .t-muted  { fill: #9198a1; }
+      .t-subtle { fill: #848d97; }
+      .accent   { fill: #58a6ff; }
+      .bar      { fill: #21262d; }
+      .tile-1   { fill: #58a6ff; }
+      .tile-2   { fill: #f778ba; }
+      .tile-3   { fill: #a371f7; }
+      .tile-4   { fill: #3fb950; }
+      .cy-base  { stop-color: #0891b2; }
+      .cy-glow  { stop-color: #a5f3fc; }
+      .bar-mid  { stop-color: #58a6ff; }
+      .bar-low  { stop-color: #a371f7; }
+    }
+  </style>
+
+  <defs>
+    <!-- rainbow for the top strip and the streak ring -->
+    <linearGradient id="rainbow-strip" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="500" y2="0" spreadMethod="repeat">
+      <stop offset="0" stop-color="#ff3b30"/><stop offset=".17" stop-color="#ff9500"/>
+      <stop offset=".33" stop-color="#ffcc00"/><stop offset=".5" stop-color="#34c759"/>
+      <stop offset=".67" stop-color="#00c7be"/><stop offset=".83" stop-color="#af52de"/>
+      <stop offset="1" stop-color="#ff3b30"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="500 0" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="rainbow-ring" gradientUnits="userSpaceOnUse" x1="464" y1="0" x2="536" y2="0">
+      <stop offset="0" stop-color="#ff3b30"/><stop offset=".2" stop-color="#ffcc00"/>
+      <stop offset=".4" stop-color="#34c759"/><stop offset=".6" stop-color="#00c7be"/>
+      <stop offset=".8" stop-color="#5856d6"/><stop offset="1" stop-color="#af52de"/>
+      <animateTransform attributeName="gradientTransform" type="rotate" from="0 500 58" to="360 500 58" dur="3s" repeatCount="indefinite"/>
+    </linearGradient>
+    <!-- cyan highlight sliding across the big numbers, same as the header slogan -->
+    <linearGradient id="cyan-slide" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1000" y2="0">
+      <stop offset="0" class="cy-base"/><stop offset=".44" class="cy-base"/>
+      <stop offset=".5" class="cy-glow"/><stop offset=".56" class="cy-base"/>
+      <stop offset="1" class="cy-base"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-600 0" to="600 0" dur="3.2s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="bar-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" class="bar-top"/><stop offset=".5" class="bar-mid"/><stop offset="1" class="bar-low"/>
+    </linearGradient>
+  </defs>
+
+  <rect class="card-bg" x="0.5" y="0.5" width="999" height="329"/>
+  <rect class="card-bd" x="0.5" y="0.5" width="999" height="329"/>
+  <rect x="0.5" y="0.5" width="999" height="4" fill="url(#rainbow-strip)"/>
+
+  <line class="divider" x1="333" y1="24" x2="333" y2="128"/>
+  <line class="divider" x1="666" y1="24" x2="666" y2="128"/>
+
+  <text fill="url(#cyan-slide)" x="166" y="72" font-size="34" font-weight="700" text-anchor="middle">26</text>
+  <text class="t-muted" x="166" y="100" font-size="15" text-anchor="middle">Total Contributions</text>
+  <text class="t-subtle" x="166" y="120" font-size="12" text-anchor="middle">Nov 21, 2022 – Present</text>
+
+  <circle class="glow" cx="500" cy="58" r="36"/>
+  <circle class="ring" cx="500" cy="58" r="36" stroke="url(#rainbow-ring)"/>
+  <text fill="url(#cyan-slide)" x="500" y="70" font-size="32" font-weight="700" text-anchor="middle">0</text>
+  <text class="accent" x="500" y="114" font-size="15" font-weight="600" text-anchor="middle">Current Streak</text>
+  <text class="t-subtle" x="500" y="132" font-size="12" text-anchor="middle">Start a new streak today</text>
+
+  <text fill="url(#cyan-slide)" x="833" y="72" font-size="34" font-weight="700" text-anchor="middle">3</text>
+  <text class="t-muted" x="833" y="100" font-size="15" text-anchor="middle">Longest Streak</text>
+  <text class="t-subtle" x="833" y="120" font-size="12" text-anchor="middle">Oct 27, 2026 – Oct 29, 2026</text>
+
+  <line class="divider" x1="60" y1="156" x2="940" y2="156"/>
+  <line class="divider" x1="250" y1="172" x2="250" y2="214"/>
+  <line class="divider" x1="500" y1="172" x2="500" y2="214"/>
+  <line class="divider" x1="750" y1="172" x2="750" y2="214"/>
+  <text class="tile-1" x="125" y="190" font-size="22" font-weight="700" text-anchor="middle">1</text><text class="t-muted" x="125" y="210" font-size="13" text-anchor="middle">Profile Views</text><text class="tile-2" x="375" y="190" font-size="22" font-weight="700" text-anchor="middle">5</text><text class="t-muted" x="375" y="210" font-size="13" text-anchor="middle">Public Repos</text><text class="tile-3" x="625" y="190" font-size="22" font-weight="700" text-anchor="middle">0</text><text class="t-muted" x="625" y="210" font-size="13" text-anchor="middle">Stars</text><text class="tile-4" x="875" y="190" font-size="22" font-weight="700" text-anchor="middle">1,443</text><text class="t-muted" x="875" y="210" font-size="13" text-anchor="middle">Days on GitHub</text>
+
+  <text class="mono t-subtle" x="60" y="240" font-size="12">// last 30 days</text>
+  <text class="mono t-subtle" x="940" y="240" font-size="12" text-anchor="end">updated 2026-11-03 01:15 ICT</text>
+  <rect class="bar" x="60" y="282.0" width="20" height="4.0"/><rect class="bar" x="90" y="282.0" width="20" height="4.0"/><rect class="bar" x="120" y="282.0" width="20" height="4.0"/><rect class="bar" x="150" y="282.0" width="20" height="4.0"/><rect class="bar" x="180" y="282.0" width="20" height="4.0"/><rect class="bar" x="210" y="282.0" width="20" height="4.0"/><rect class="bar" x="240" y="282.0" width="20" height="4.0"/><rect class="bar" x="270" y="282.0" width="20" height="4.0"/><rect class="bar" x="300" y="282.0" width="20" height="4.0"/><rect class="bar" x="330" y="282.0" width="20" height="4.0"/><rect class="bar" x="360" y="282.0" width="20" height="4.0"/><rect class="bar" x="390" y="282.0" width="20" height="4.0"/><rect class="bar-on" fill="url(#bar-grad)" style="animation-delay:0.96s" x="420" y="254.0" width="20" height="32.0"/><rect class="bar" x="450" y="282.0" width="20" height="4.0"/><rect class="bar" x="480" y="282.0" width="20" height="4.0"/><rect class="bar" x="510" y="282.0" width="20" height="4.0"/><rect class="bar" x="540" y="282.0" width="20" height="4.0"/><rect class="bar" x="570" y="282.0" width="20" height="4.0"/><rect class="bar" x="600" y="282.0" width="20" height="4.0"/><rect class="bar" x="630" y="282.0" width="20" height="4.0"/><rect class="bar" x="660" y="282.0" width="20" height="4.0"/><rect class="bar" x="690" y="282.0" width="20" height="4.0"/><rect class="bar-on" fill="url(#bar-grad)" style="animation-delay:1.76s" x="720" y="278.0" width="20" height="8.0"/><rect class="bar-on" fill="url(#bar-grad)" style="animation-delay:1.84s" x="750" y="270.0" width="20" height="16.0"/><rect class="bar-on" fill="url(#bar-grad)" style="animation-delay:1.92s" x="780" y="246.0" width="20" height="40.0"/><rect class="bar" x="810" y="282.0" width="20" height="4.0"/><rect class="bar" x="840" y="282.0" width="20" height="4.0"/><rect class="bar-on" fill="url(#bar-grad)" style="animation-delay:2.16s" x="870" y="262.0" width="20" height="24.0"/><rect class="bar" x="900" y="282.0" width="20" height="4.0"/><rect class="bar" x="930" y="282.0" width="20" height="4.0"/>
+</svg>
